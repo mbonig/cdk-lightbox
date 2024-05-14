@@ -14,7 +14,7 @@ const project = new web.ReactTypeScriptProject({
     'cdk-lightbox': 'bin/cdk-lightbox',
   },
 });
-project.gitignore!.exclude('/build/', '/bin/*.js');
+project.gitignore!.exclude('/build/', '/bin/cdk-lightbox');
 
 project.npmignore!.include('/build/');
 project.npmignore!.exclude('/public/', '/bin/**/*.ts');

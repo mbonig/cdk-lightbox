@@ -45,5 +45,5 @@ jspm_packages/
 /dist/
 !/.eslintrc.json
 /build/
-/bin/*.js
+/bin/cdk-lightbox
 !/.projenrc.ts
