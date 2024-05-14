@@ -91,6 +91,10 @@
       "type": "override"
     },
     {
+      "name": "express",
+      "type": "runtime"
+    },
+    {
       "name": "react",
       "type": "runtime"
     },

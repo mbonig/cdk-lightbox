@@ -6,5 +6,11 @@ const project = new web.ReactTypeScriptProject({
   release: true,
   releaseToNpm: true,
   npmRegistryUrl: 'https://npm.pkg.github.com',
+  deps: ['express'],
+  npmIgnoreOptions: {
+    ignorePatterns: [
+      '!build',
+    ],
+  },
 });
 project.synth();
