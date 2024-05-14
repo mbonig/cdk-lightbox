@@ -149,7 +149,7 @@
       "description": "Runs after successful compilation",
       "steps": [
         {
-          "exec": "mkdir dist || true;mkdir dist/bin || true;mkdir dist/build || true;cp -r build/* dist/build;cp -r bin/* dist/bin"
+          "exec": "mkdir -p dist/js || true;tar -zcf dist/js/dist.tgz build/* bin/*"
         }
       ]
     },
