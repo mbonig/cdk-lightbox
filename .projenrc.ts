@@ -2,7 +2,7 @@ import { web } from 'projen';
 
 const project = new web.ReactTypeScriptProject({
   defaultReleaseBranch: 'main',
-  name: '@matthewbonig/cdk-lightbox',
+  name: 'mbonig/cdk-lightbox',
   projenrcTs: true,
   release: true,
   releaseToNpm: true,

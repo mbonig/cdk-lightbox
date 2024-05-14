@@ -1,5 +1,5 @@
 {
-  "name": "@matthewbonig/cdk-lightbox",
+  "name": "mbonig/cdk-lightbox",
   "bin": {
     "cdk-lightbox.ts": "bin/cdk-lightbox.ts"
   },
