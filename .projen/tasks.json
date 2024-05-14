@@ -79,6 +79,15 @@
       "steps": [
         {
           "exec": "react-scripts build"
+        },
+        {
+          "exec": "tsc --esModuleInterop  bin/cdk-lightbox.ts"
+        },
+        {
+          "exec": "mv bin/cdk-lightbox.js bin/cdk-lightbox"
+        },
+        {
+          "exec": "chmod +x bin/cdk-lightbox"
         }
       ]
     },

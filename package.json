@@ -1,7 +1,7 @@
 {
   "name": "@mbonig/cdk-lightbox",
   "bin": {
-    "cdk-lightbox.ts": "bin/cdk-lightbox.ts"
+    "cdk-lightbox": "bin/cdk-lightbox"
   },
   "scripts": {
     "build": "npx projen build",
