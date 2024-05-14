@@ -13,4 +13,14 @@ const project = new web.ReactTypeScriptProject({
     ],
   },
 });
+
+project.tasks.tryFind('post-compile')!.exec(
+  [
+    'mkdir dist || true',
+    'mkdir dist/bin || true',
+    'mkdir dist/build || true',
+    'cp -r build/* dist/build',
+    'cp -r bin/* dist/bin',
+  ].join(';'),
+);
 project.synth();
