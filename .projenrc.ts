@@ -1,4 +1,5 @@
 import { web } from 'projen';
+
 const project = new web.ReactTypeScriptProject({
   defaultReleaseBranch: 'main',
   name: '@matthewbonig/cdk-lightbox',
@@ -7,6 +8,7 @@ const project = new web.ReactTypeScriptProject({
   releaseToNpm: true,
   npmRegistryUrl: 'https://npm.pkg.github.com',
   deps: ['express'],
+  package: true,
 });
 project.npmignore!.include('/build/');
 project.npmignore!.exclude('/public/');
