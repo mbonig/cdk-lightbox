@@ -7,12 +7,9 @@ const project = new web.ReactTypeScriptProject({
   releaseToNpm: true,
   npmRegistryUrl: 'https://npm.pkg.github.com',
   deps: ['express'],
-  npmIgnoreOptions: {
-    ignorePatterns: [
-      '!build',
-    ],
-  },
 });
+project.npmignore!.include('/build/');
+project.npmignore!.exclude('/public/');
 
 project.tasks.tryFind('post-compile')!.exec(
   [
